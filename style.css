@@ -1,0 +1,22 @@
+.animated-btn {
+  transition: background 0.3s;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 1em 2em;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.animated-btn.bounce {
+  animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+  0%   { transform: scale(1); }
+  30%  { transform: scale(1.2); }
+  50%  { transform: scale(0.95); }
+  70%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
